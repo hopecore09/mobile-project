@@ -1,0 +1,10 @@
+include: package:lints/recommended.yaml
+
+linter:
+  rules:
+    - prefer_final_fields
+    - prefer_final_locals
+    - avoid_catches_without_on_clauses
+    - only_throw_errors
+    - close_sinks
+    - cancel_subscriptions
