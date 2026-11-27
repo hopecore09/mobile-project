@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'archiver_error.dart';
 import 'archiver_exception.dart';
 
 /// Rules for entry paths stored in an archive (see FORMAT.md, "Пути записей").
@@ -55,5 +56,6 @@ abstract final class ArchivePaths {
   }
 
   static ArchiverException _unsafe(String path, String reason) =>
-      ArchiverException('Unsafe entry path ${jsonEncode(path)}: $reason');
+      ArchiverException(ArchiverError.unsafePath,
+          'Unsafe entry path ${jsonEncode(path)}: $reason');
 }

@@ -42,7 +42,13 @@ void main() {
       test(name, () {
         expect(
           () => ArchivePaths.validate(path),
-          throwsA(isA<ArchiverException>()),
+          throwsA(
+            isA<ArchiverException>().having(
+              (e) => e.code,
+              'code',
+              ArchiverError.unsafePath,
+            ),
+          ),
         );
       });
     });
