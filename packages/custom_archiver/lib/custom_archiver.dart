@@ -2,6 +2,7 @@
 library custom_archiver;
 
 export 'src/api/archive_packer.dart';
+export 'src/api/archive_paths.dart';
 export 'src/api/archive_unpacker.dart';
 export 'src/api/archiver_exception.dart';
 export 'src/api/entry_header.dart';
