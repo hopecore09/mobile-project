@@ -7,4 +7,5 @@ export 'src/api/archive_unpacker.dart';
 export 'src/api/archiver_exception.dart';
 export 'src/api/entry_header.dart';
 export 'src/api/entry_target.dart';
+export 'src/api/entry_type.dart';
 export 'src/api/pack_source.dart';
